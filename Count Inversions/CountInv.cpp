@@ -1,5 +1,4 @@
-// Merges two arrays of n distinct integers
-#include<pch.h>
+// Counts the number of inversions in a sequence of integers
 #include<iostream>
 #include<fstream>
 #include<stdlib.h> 
@@ -34,6 +33,7 @@ unsigned long int CountInversions(std::vector<unsigned long int>& arr,
         // Merge left and right parts and count split inversions
         num_inv += CountSplitInversions(arr, temp, left, mid + 1, right);
     }
+
     return num_inv;
 }
     
@@ -57,7 +57,7 @@ unsigned long int CountSplitInversions(std::vector<unsigned long int>& arr,
         else
         {
             temp[k++] = arr[j++];
-            num_inv = num_inv + (mid - 1);
+            num_inv = num_inv + (mid - i + 1);
         }
     }
     // Copy remaining elements of left to temp

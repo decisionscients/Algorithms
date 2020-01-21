@@ -5,7 +5,7 @@ using namespace std;
 
 //Splits an integer in half by digits
 
-integer_splits SplitInteger(int x)
+int main(int x)
 {
 
     struct integer_splits response;
@@ -19,6 +19,6 @@ integer_splits SplitInteger(int x)
     response.first_half = x / divisor;
     response.second_half = x % divisor;
 
-    return response;
+    return 0;
 
 }
