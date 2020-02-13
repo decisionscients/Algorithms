@@ -78,7 +78,7 @@ int * MergeSort(int arr[], int l, int r)
     return arr;
 }
 
-int main()
+int main_MergeSort()
 {
     const int n = 8;
     int arr[n] = { 9, 8, 7, 6, 4, 5, 3, 1 };

@@ -21,6 +21,9 @@
   <ItemGroup>
     <ClCompile Include="MergeSort.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MergeSort.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D980C377-9C04-4796-9C49-3379DD8BE1B1}</ProjectGuid>
